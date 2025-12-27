@@ -11,3 +11,9 @@ To run:
 ```bash
 bun dev
 ```
+
+To lint:
+
+```bash
+bun lint
+```
