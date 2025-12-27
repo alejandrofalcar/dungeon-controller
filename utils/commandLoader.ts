@@ -17,7 +17,7 @@ interface Command {
 export async function loadCommands(): Promise<Command[]> {
   const commands: Command[] = [];
   const commandsPath = path.join(__dirname, "../commands");
-  const commandFiles = fs.readdirSync(commandsPath).filter((file) => file.endsWith(".js") || file.endsWith(".ts"));
+  const commandFiles = fs.readdirSync(commandsPath).filter((file) => file.endsWith(".ts"));
 
   for (const file of commandFiles) {
     const filePath = path.join(commandsPath, file);
